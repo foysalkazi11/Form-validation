@@ -77,7 +77,7 @@ function checkInputs() {
 function setErrorFor(input){
   const formControl = input.parentElement;
   formControl.querySelector('small').
-  style.visibility = 'visible';
+  style.display = 'block';
   formControl.className = 'form-control error';
 }
 
@@ -85,7 +85,7 @@ function setSuccessFor(name) {
   const formControl = name.parentElement;
   formControl.className = 'form-control success';
   formControl.querySelector('small').
-  style.visibility = 'hidden';
+  style.display = 'none';
 }
 
 function validation(field,regex) {
@@ -99,7 +99,7 @@ function validation(field,regex) {
   }else if(regex.test(field.value) === true){
   
     field.parentElement.className = 'form-control success';
-    field.querySelector('small').style.display = '';
+    field.querySelector('small').style.visibility = 'hidden';
    
   }
 }
