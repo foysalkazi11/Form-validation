@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>form validation</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Crate Account</h1>
+    </div>
+    <form action="#" class="form" id="form">
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <i class="far fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Name should contains at least two digits or more.</small>
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <i class="far fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Enter an valid email.</small>
+      </div>
+      <div class="form-control">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone number">
+        <i class="far fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Phone number should contains 11 digits.</small>
+      </div>
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Username">
+        <i class="far fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>User name should be 5-12 digits long.</small>
+      </div>
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <i class="far fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>password should at least 8-12 characters long.</small>
+      </div>
+      <div class="form-control">
+        <label for="conformPassword">conform Password</label>
+        <input type="password" name="conformPassword" id="conformPassword" placeholder="Conform password">
+        <i class="far fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Password dose not match!!!</small>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="https://kit.fontawesome.com/975a06e392.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

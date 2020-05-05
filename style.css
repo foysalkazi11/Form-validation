@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color:rgb(39, 60, 117) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container{
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  border: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  overflow: hidden;
+  
+}
+.header{
+  padding: 20px 40px;
+  background-color: #f7f7f7;
+  font-weight: 100;
+}
+.header h1{
+  margin: 0;
+}
+form{
+  padding: 30px 40px;
+}
+.form-control{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.form-control input{
+  display: block;
+  border: 2px solid #f0f0f0;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 0 5px 5px;
+  border-radius: 5px;
+  outline-style: none;
+
+}
+.form-control.success input{
+  border-color:rgba(46, 204, 113,1.0) ;
+}
+.form-control.success i.fa-check-circle{
+  color:rgba(46, 204, 113,1.0) ;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+  color:rgba(231, 76, 60,1.0) ;
+  visibility: visible;
+}
+.form-control.error input{
+  border-color:rgba(231, 76, 60,1.0);
+}
+.form-control i{
+  visibility: hidden;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+.form-control small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.form-control.error small{
+  visibility: visible;
+  color: rgba(231, 76, 60,1.0);
+  
+}
+button{
+  width: 100%;
+  background-color:rgb(39, 60, 117) ;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+}
+
+
+/* .container{
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  margin: 10px auto;
+  border: 1px solid black;
+  
+}
+.form-control{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: 10px auto;
+  border: 1px solid black;
+  
+}
+.form-control label{
+ 
+
+  margin-bottom: 10px ;
+  
+}
+.form-control input{
+  
+  width: 100%;
+  max-width: 300px;
+  
+} */
+
